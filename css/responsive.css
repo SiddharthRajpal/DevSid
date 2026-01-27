@@ -1,0 +1,559 @@
+/* ============================================
+   RESPONSIVE STYLES - Siddharth Rajpal Portfolio
+   ============================================ */
+
+/* === MOBILE FIRST BASE (< 640px) === */
+
+/* Navigation Mobile */
+.nav-toggle {
+  display: flex;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: rgba(10, 10, 26, 0.98);
+  backdrop-filter: blur(var(--blur-lg));
+  -webkit-backdrop-filter: blur(var(--blur-lg));
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+  transition: right var(--transition-normal);
+  border-left: 1px solid var(--glass-border);
+  z-index: calc(var(--z-nav) - 1);
+}
+
+.nav-menu.active {
+  right: 0;
+}
+
+.nav-menu .nav-link {
+  font-size: var(--fs-h4);
+}
+
+/* Hero Mobile */
+.hero {
+  padding: var(--space-3xl) 0 var(--space-xl);
+}
+
+.hero-content {
+  padding: var(--space-xl);
+}
+
+.hero-name {
+  font-size: clamp(2rem, 12vw, 3rem);
+}
+
+.hero-roles {
+  font-size: var(--fs-body);
+}
+
+.hero-cta {
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.hero-cta .btn {
+  width: 100%;
+}
+
+.scroll-indicator {
+  display: none;
+}
+
+/* About Mobile */
+.about-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+.profile-card {
+  animation: none;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+}
+
+.profile-stats {
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+}
+
+.stat-number {
+  font-size: var(--fs-h3);
+}
+
+.stat-label {
+  font-size: 0.65rem;
+}
+
+.about-highlights {
+  justify-content: center;
+}
+
+.leadership-grid {
+  grid-template-columns: 1fr;
+}
+
+/* Projects Mobile */
+.projects-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.project-image {
+  height: 180px;
+}
+
+.project-content {
+  padding: var(--space-lg);
+}
+
+/* Skills Mobile */
+.skills-grid {
+  grid-template-columns: 1fr;
+}
+
+.skill-category {
+  padding: var(--space-lg);
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.skills-icons {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Contact Mobile */
+.contact-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+.contact-card {
+  order: 2;
+}
+
+.contact-info {
+  order: 1;
+}
+
+/* Footer Mobile */
+.footer-content {
+  gap: var(--space-lg);
+}
+
+/* === SMALL TABLETS (640px+) === */
+@media (min-width: 640px) {
+  .container {
+    padding: 0 var(--space-xl);
+  }
+
+  .hero-content {
+    padding: var(--space-2xl);
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .hero-roles {
+    font-size: var(--fs-h4);
+  }
+
+  .hero-cta {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-cta .btn {
+    width: auto;
+  }
+
+  .profile-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-icons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .scroll-indicator {
+    display: flex;
+  }
+}
+
+/* === TABLETS (768px+) === */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .section {
+    padding: var(--space-4xl) 0;
+  }
+
+  /* Navigation Tablet */
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    backdrop-filter: none;
+    flex-direction: row;
+    padding: 0;
+    border: none;
+    gap: var(--space-xl);
+  }
+
+  .nav-menu .nav-link {
+    font-size: var(--fs-body);
+  }
+
+  /* Hero Tablet */
+  .hero {
+    padding: var(--space-4xl) 0;
+  }
+
+  .hero-content {
+    padding: var(--space-3xl);
+  }
+
+  /* About Tablet */
+  .about-grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-2xl);
+    align-items: start;
+  }
+
+  .profile-card {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-stats {
+    gap: var(--space-md);
+  }
+
+  .stat-number {
+    font-size: var(--fs-h2);
+  }
+
+  .stat-label {
+    font-size: var(--fs-xs);
+  }
+
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Projects Tablet */
+  .project-image {
+    height: 200px;
+  }
+
+  /* Skills Tablet */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Tablet */
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .contact-card {
+    order: 1;
+  }
+
+  .contact-info {
+    order: 2;
+  }
+}
+
+/* === LAPTOPS (1024px+) === */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* Hero Laptop */
+  .hero-content {
+    max-width: 800px;
+  }
+
+  /* About Laptop */
+  .about-grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-3xl);
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Projects Laptop */
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  /* Enable 3D tilt effect on laptop+ */
+  .project-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  /* Contact Laptop */
+  .contact-grid {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+/* === DESKTOPS (1280px+) === */
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--container-xl);
+  }
+
+  .section {
+    padding: var(--space-section) 0;
+  }
+
+  /* Navigation Desktop */
+  .nav-menu {
+    gap: var(--space-2xl);
+  }
+
+  /* Hero Desktop */
+  .hero-content {
+    max-width: 900px;
+  }
+
+  .hero-name {
+    font-size: var(--fs-hero);
+  }
+
+  .hero-roles {
+    font-size: var(--fs-h3);
+  }
+
+  /* About Desktop */
+  .profile-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* Skills Desktop */
+  .skill-category {
+    padding: var(--space-xl);
+  }
+
+  .category-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+
+/* === LARGE DESKTOPS (1536px+) === */
+@media (min-width: 1536px) {
+  .container {
+    max-width: var(--container-2xl);
+  }
+
+  .hero-content {
+    max-width: 1000px;
+    padding: var(--space-4xl);
+  }
+}
+
+/* === TOUCH DEVICE OPTIMIZATIONS === */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover-dependent transforms */
+  .glass-card:hover {
+    transform: none;
+  }
+
+  .project-card:hover .project-image img {
+    transform: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  .btn-primary:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-secondary:hover {
+    transform: none;
+  }
+
+  .social-link:hover {
+    transform: none;
+  }
+
+  .highlight-badge:hover {
+    transform: none;
+  }
+
+  .tech-tag:hover {
+    transform: none;
+  }
+
+  .skill-icon-item:hover {
+    transform: none;
+  }
+
+  /* Make project overlay always visible on touch */
+  .project-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(10, 10, 26, 0.9) 0%, transparent 60%);
+  }
+
+  .project-link {
+    transform: translateY(0);
+  }
+
+  /* Larger touch targets */
+  .btn {
+    min-height: 48px;
+    padding: var(--space-md) var(--space-xl);
+  }
+
+  .nav-link {
+    padding: var(--space-md);
+  }
+
+  .social-link {
+    min-height: 56px;
+  }
+
+  .nav-toggle {
+    padding: var(--space-md);
+  }
+
+  .nav-toggle span {
+    width: 30px;
+    height: 3px;
+  }
+}
+
+/* === HIGH DPI DISPLAYS === */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Sharper borders */
+  .glass-card,
+  .glass {
+    border-width: 0.5px;
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .bg-gradient,
+  #particles,
+  .navbar,
+  .scroll-indicator,
+  .hero-cta,
+  .contact-form {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+
+  .glass-card,
+  .glass {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .gradient-text {
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    color: #333;
+  }
+}
+
+/* === LANDSCAPE MOBILE === */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: var(--space-xl) 0;
+  }
+
+  .hero-content {
+    padding: var(--space-lg);
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    display: none;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* === DARK MODE PREFERENCE (already dark, but for clarity) === */
+@media (prefers-color-scheme: dark) {
+  /* Site is already dark themed */
+}
+
+/* === LIGHT MODE OVERRIDE (if needed in future) === */
+@media (prefers-color-scheme: light) {
+  /* Could add light mode styles here if needed */
+  /* Currently maintaining dark theme regardless of preference */
+}

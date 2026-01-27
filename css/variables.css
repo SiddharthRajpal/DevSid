@@ -1,0 +1,119 @@
+/* ============================================
+   DESIGN TOKENS - Siddharth Rajpal Portfolio
+   ============================================ */
+
+:root {
+  /* === BACKGROUND COLORS === */
+  --bg-primary: #0a0a1a;
+  --bg-secondary: #12122a;
+  --bg-tertiary: #1a1a3e;
+
+  /* === ACCENT COLORS === */
+  --accent-primary: #ff9f1c;      /* Vibrant orange */
+  --accent-secondary: #ffbf69;    /* Soft gold */
+  --accent-tertiary: #f77f00;     /* Deep orange */
+  --accent-warm: #fcbf49;         /* Warm yellow */
+  --accent-gold: #ffd700;         /* Gold for achievements */
+  --accent-ember: #e85d04;        /* Ember orange */
+
+  /* === GLASSMORPHISM COLORS === */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg-hover: rgba(255, 255, 255, 0.1);
+  --glass-bg-strong: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border-hover: rgba(255, 255, 255, 0.2);
+  --glass-shadow: rgba(255, 159, 28, 0.2);
+
+  /* === TEXT COLORS === */
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-accent: var(--accent-primary);
+
+  /* === GRADIENTS === */
+  --gradient-primary: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  --gradient-secondary: linear-gradient(135deg, var(--accent-secondary), var(--accent-tertiary));
+  --gradient-glow: linear-gradient(135deg, rgba(0, 212, 255, 0.4), rgba(123, 44, 191, 0.4));
+  --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  --gradient-bg: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
+
+  /* === TYPOGRAPHY === */
+  --font-heading: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Font Sizes - Fluid Typography */
+  --fs-hero: clamp(2.5rem, 8vw, 5rem);
+  --fs-h1: clamp(2rem, 5vw, 3.5rem);
+  --fs-h2: clamp(1.75rem, 4vw, 2.5rem);
+  --fs-h3: clamp(1.25rem, 3vw, 1.75rem);
+  --fs-h4: clamp(1.1rem, 2vw, 1.25rem);
+  --fs-body: clamp(0.95rem, 1.5vw, 1.1rem);
+  --fs-small: clamp(0.8rem, 1.2vw, 0.9rem);
+  --fs-xs: clamp(0.7rem, 1vw, 0.8rem);
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* === SPACING === */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-section: clamp(4rem, 10vh, 8rem);
+
+  /* === GLASSMORPHISM VALUES === */
+  --blur-xs: 4px;
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 24px;
+  --blur-xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-full: 9999px;
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px var(--glass-shadow);
+  --shadow-glow-strong: 0 0 50px var(--accent-primary);
+
+  /* === TRANSITIONS === */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* === Z-INDEX SCALE === */
+  --z-behind: -1;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-sticky: 50;
+  --z-nav: 100;
+  --z-modal: 1000;
+  --z-max: 9999;
+
+  /* === CONTAINER WIDTHS === */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-2xl: 1400px;
+}
