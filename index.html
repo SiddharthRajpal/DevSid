@@ -2,9 +2,677 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siddharth Rajpal - AI/ML Developer, Roboticist, and Software Engineer. 6+ years experience in AI, Machine Learning, and Robotics. View my portfolio and projects.">
+  <meta name="keywords" content="Siddharth Rajpal, AI Developer, Machine Learning, Robotics, Python, TensorFlow, RoboCup, Portfolio">
+  <meta name="author" content="Siddharth Rajpal">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Siddharth Rajpal | AI/ML Developer & Roboticist">
+  <meta property="og:description" content="Portfolio showcasing AI/ML projects, hackathon wins, and robotics achievements.">
+  <meta property="og:type" content="website">
+
+  <title>Siddharth Rajpal | AI/ML Developer & Roboticist</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-  <h1>Hello, World!</h1>
+<body class="loading">
+  <!-- Intro/Preloader Animation -->
+  <div class="preloader" id="preloader">
+    <!-- Splash Particles -->
+    <div class="splash-particles">
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+      <span class="splash-particle"></span>
+    </div>
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <span class="preloader-bracket">&lt;</span>
+        <span class="preloader-text">SR</span>
+        <span class="preloader-bracket">/&gt;</span>
+      </div>
+      <div class="preloader-tagline">
+        <span>Building the Future one Step at a Time</span>
+      </div>
+      <div class="preloader-progress">
+        <div class="preloader-bar"></div>
+      </div>
+    </div>
+    <div class="preloader-reveal"></div>
+  </div>
+
+  <!-- Background -->
+  <div class="bg-gradient">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+  </div>
+
+  <!-- Particles Container -->
+  <div id="particles"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span>&lt;</span>SR<span>/&gt;</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content glass-card reveal-up">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name gradient-text">Siddharth Rajpal</h1>
+      <div class="hero-roles">
+        <span class="typing-text" id="typed-text"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline">
+        Grade 12 Student with 6+ years of experience in AI, Machine Learning & Robotics.
+        National-level RoboCup competitor and multiple hackathon winner passionate about
+        building intelligent systems that solve real-world problems.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <span class="btn-icon">→</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="profile-card glass-card">
+            <div class="profile-image">
+              <div class="profile-ring"></div>
+              <div class="profile-placeholder">SR</div>
+            </div>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="6">0</span>+
+                <span class="stat-label">Years Exp</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="5">0</span>+
+                <span class="stat-label">Hackathons</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>x
+                <span class="stat-label">RoboCup</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <h3>Passionate About AI & Robotics</h3>
+          <p class="about-text">
+            I'm a Grade 12 student at The Shriram Millennium School, Noida, with an unwavering
+            passion for Artificial Intelligence, Machine Learning, and Robotics. My journey began
+            over 6 years ago at Makers Robotics Academy, where I've trained extensively in Python,
+            AI/ML, and autonomous systems.
+          </p>
+          <p class="about-text">
+            From winning the IndiaAI Covid Warriors Hackathon to representing India at the
+            RoboCup Junior Asia-Pacific Championship in China, I've consistently pushed the
+            boundaries of what's possible with technology. As the Head of my school's AI Club
+            and a mentor at Makers Robotics, I'm dedicated to sharing knowledge and inspiring
+            the next generation of innovators.
+          </p>
+
+          <div class="about-highlights">
+            <span class="highlight-badge">
+              <span class="badge-icon">🏆</span>
+              IndiaAI Winner
+            </span>
+            <span class="highlight-badge">
+              <span class="badge-icon">🌏</span>
+              Asia-Pacific RoboCup
+            </span>
+            <span class="highlight-badge">
+              <span class="badge-icon">💼</span>
+              Software Intern
+            </span>
+            <span class="highlight-badge">
+              <span class="badge-icon">🎓</span>
+              94% in ICSE
+            </span>
+            <span class="highlight-badge">
+              <span class="badge-icon">🧠</span>
+              AI Club Head
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership Section -->
+      <div class="leadership-section reveal-up">
+        <h3>Leadership & Mentorship</h3>
+        <div class="leadership-grid">
+          <div class="role-card glass-card">
+            <span class="role-icon">🧠</span>
+            <h4>Head of AI Club</h4>
+            <p>Teaching Python & AI concepts to 35+ students</p>
+          </div>
+          <div class="role-card glass-card">
+            <span class="role-icon">🤖</span>
+            <h4>Mentor at Makers Robotics</h4>
+            <p>Guiding teams through RoboCup competitions</p>
+          </div>
+          <div class="role-card glass-card">
+            <span class="role-icon">💻</span>
+            <h4>Vice Head ICT Club</h4>
+            <p>Led team of 20 for TEDx & workshops</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">
+          A collection of projects showcasing my expertise in AI/ML, Computer Vision,
+          and Robotics—from hackathon winners to professional internship work.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: OCR Plugin -->
+        <article class="project-card glass-card tilt-effect reveal-up" data-project="ocr">
+          <div class="project-image">
+            <div class="project-placeholder">📄</div>
+            <div class="project-overlay">
+              <button class="project-link" data-modal="ocr">View Details</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Internship</span>
+              <span class="project-achievement">
+                💼 Professional
+              </span>
+            </div>
+            <h3 class="project-title">Intelligent Document Processing</h3>
+            <p class="project-description">
+              Developed a custom OCR plugin using Tesseract & OpenCV to extract data from
+              multi-template invoices and purchase orders for CRM integration at Quadrafort Technologies.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tesseract</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">CRM</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Fatigue Detection -->
+        <article class="project-card glass-card tilt-effect reveal-up delay-1" data-project="fatigue">
+          <div class="project-image">
+            <div class="project-placeholder">👁️</div>
+            <div class="project-overlay">
+              <button class="project-link" data-modal="fatigue">View Details</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Hackathon</span>
+              <span class="project-achievement">
+                🏆 5th Place
+              </span>
+            </div>
+            <h3 class="project-title">Driver Fatigue Detection</h3>
+            <p class="project-description">
+              Built a real-time computer vision system that monitors driver alertness to
+              prevent accidents. Created for Toyota Hackathon India 2025.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">CNN</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Stock Tracker -->
+        <article class="project-card glass-card tilt-effect reveal-up delay-2" data-project="stock">
+          <div class="project-image">
+            <div class="project-placeholder">📈</div>
+            <div class="project-overlay">
+              <button class="project-link" data-modal="stock">View Details</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Hackathon</span>
+              <span class="project-achievement">
+                🥈 Runner-up
+              </span>
+            </div>
+            <h3 class="project-title">Stock Market Tracker & Predictor</h3>
+            <p class="project-description">
+              A comprehensive stock market tracking application with integrated ML-based
+              prediction system. Built at Binary Fest Hackathon.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SARIMA</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">ML</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Medical AI -->
+        <article class="project-card glass-card tilt-effect reveal-up delay-3" data-project="medical">
+          <div class="project-image">
+            <div class="project-placeholder">🏥</div>
+            <div class="project-overlay">
+              <button class="project-link" data-modal="medical">View Details</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Hackathon</span>
+              <span class="project-achievement">
+                🥈 Runner-up
+              </span>
+            </div>
+            <h3 class="project-title">Medical Diagnostic AI</h3>
+            <p class="project-description">
+              Neural network-based diagnostic system capable of detecting glaucoma, skin
+              cancer, and pneumonia from medical images. Built at Jaipur Hackathon.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Medical AI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: COVID Predictor -->
+        <article class="project-card glass-card tilt-effect reveal-up delay-4" data-project="covid">
+          <div class="project-image">
+            <div class="project-placeholder">🦠</div>
+            <div class="project-overlay">
+              <button class="project-link" data-modal="covid">View Details</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Hackathon</span>
+              <span class="project-achievement winner">
+                🏆 Winner
+              </span>
+            </div>
+            <h3 class="project-title">COVID-19 Case Predictor</h3>
+            <p class="project-description">
+              ML model forecasting COVID-19 case trends using time-series analysis.
+              Won IndiaAI Covid Warriors Hackathon and received a laptop as prize!
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SARIMA</span>
+              <span class="tech-tag">Time Series</span>
+              <span class="tech-tag">ML</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: RoboCup -->
+        <article class="project-card glass-card tilt-effect reveal-up delay-5" data-project="robocup">
+          <div class="project-image">
+            <div class="project-placeholder">🤖</div>
+            <div class="project-overlay">
+              <button class="project-link" data-modal="robocup">View Details</button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Competition</span>
+              <span class="project-achievement">
+                🌏 Asia-Pacific
+              </span>
+            </div>
+            <h3 class="project-title">RoboCup Junior Robotics</h3>
+            <p class="project-description">
+              Software Lead for autonomous robots competing at regional, national, and
+              Asia-Pacific levels. 3x National participant, represented India in China.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">ROS</span>
+              <span class="tech-tag">Arduino</span>
+              <span class="tech-tag">OpenCV</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">What I Know</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-description">
+          A diverse toolkit built over 6+ years of hands-on experience in software
+          development, artificial intelligence, and robotics.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category glass-card reveal-up">
+          <div class="category-header">
+            <div class="category-icon">💻</div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95" style="--progress: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85" style="--progress: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="70" style="--progress: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML/CSS</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85" style="--progress: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="skill-category glass-card reveal-up delay-1">
+          <div class="category-header">
+            <div class="category-icon">🧠</div>
+            <h3>AI & Machine Learning</h3>
+          </div>
+          <div class="skills-icons">
+            <div class="skill-icon-item">
+              <span class="icon">🔷</span>
+              <span>TensorFlow</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">👁️</span>
+              <span>OpenCV</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">🔲</span>
+              <span>CNN</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">📊</span>
+              <span>SARIMA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robotics -->
+        <div class="skill-category glass-card reveal-up delay-2">
+          <div class="category-header">
+            <div class="category-icon">🤖</div>
+            <h3>Robotics</h3>
+          </div>
+          <div class="skills-icons">
+            <div class="skill-icon-item">
+              <span class="icon">⚙️</span>
+              <span>ROS</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">🔌</span>
+              <span>Arduino</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">🍓</span>
+              <span>Raspberry Pi</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">🔧</span>
+              <span>Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platforms & Tools -->
+        <div class="skill-category glass-card reveal-up delay-3">
+          <div class="category-header">
+            <div class="category-icon">🛠️</div>
+            <h3>Platforms & Tools</h3>
+          </div>
+          <div class="skills-icons">
+            <div class="skill-icon-item">
+              <span class="icon">📱</span>
+              <span>Flutter</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">🔥</span>
+              <span>Firebase</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">📦</span>
+              <span>Git</span>
+            </div>
+            <div class="skill-icon-item">
+              <span class="icon">🐧</span>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-description">
+          Interested in collaborating on AI/ML projects, hackathons, or robotics competitions?
+          I'd love to hear from you!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card glass-card reveal-left">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder=" " required>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info reveal-right">
+          <div class="contact-intro">
+            <h3>Let's Build Something Amazing</h3>
+            <p>
+              Whether you have a project idea, want to collaborate on a hackathon,
+              or just want to chat about AI and robotics—I'm always excited to connect
+              with fellow tech enthusiasts.
+            </p>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:sidrajpal@gmail.com" class="social-link">
+              <span class="icon">✉️</span>
+              <span>sidrajpal@gmail.com</span>
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener">
+              <span class="icon">💼</span>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener">
+              <span class="icon">🐙</span>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-content glass-card">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-header">
+        <span class="modal-icon" id="modal-icon"></span>
+        <div class="modal-title-wrapper">
+          <span class="modal-type" id="modal-type"></span>
+          <h2 class="modal-title" id="modal-title"></h2>
+        </div>
+      </div>
+      <div class="modal-badge" id="modal-badge"></div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Overview</h3>
+          <p id="modal-overview"></p>
+        </div>
+        <div class="modal-section">
+          <h3>Key Features</h3>
+          <ul class="modal-features" id="modal-features"></ul>
+        </div>
+        <div class="modal-section">
+          <h3>Technical Details</h3>
+          <p id="modal-technical"></p>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies Used</h3>
+          <div class="modal-tech" id="modal-tech"></div>
+        </div>
+        <div class="modal-section" id="modal-outcome-section">
+          <h3>Outcome</h3>
+          <p id="modal-outcome"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          Designed & Built by <a href="#">Siddharth Rajpal</a> © 2025
+        </p>
+        <div class="footer-social">
+          <a href="mailto:sidrajpal@gmail.com" aria-label="Email">✉️</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="GitHub">🐙</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
